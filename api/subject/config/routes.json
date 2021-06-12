@@ -1,0 +1,100 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/apiSubjects/delete/:id",
+      "handler": "subject.apiSubjectsDelete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/apiSubjects/update",
+      "handler": "subject.apiSubjectsUpdate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/apiSubjects/edit/:id",
+      "handler": "subject.apiSubjectsEditPage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/apiSubjects/add",
+      "handler": "subject.apiSubjectsAdd",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/apiSubjects",
+      "handler": "subject.apiSubjectsPage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/apiSubjects/add",
+      "handler": "subject.apiSubjectsAddPage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subjects",
+      "handler": "subject.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subjects/count",
+      "handler": "subject.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subjects/:id",
+      "handler": "subject.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/subjects",
+      "handler": "subject.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/subjects/:id",
+      "handler": "subject.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/subjects/:id",
+      "handler": "subject.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

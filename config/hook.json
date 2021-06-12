@@ -1,0 +1,12 @@
+{
+    "settings": {
+      "ejs": {
+        "enabled": true,
+        "layout": false,
+        "viewExt": "ejs",
+        "partial": true,
+        "cache": false,
+        "debug": true
+      }
+    }
+  }

@@ -1,0 +1,76 @@
+{
+  "_from": "strapi-plugin-import-export-content",
+  "_id": "strapi-plugin-import-export-content@0.3.1",
+  "_inBundle": false,
+  "_integrity": "sha512-OI6sAcsPlcGnu96e6nH5/sHqaJJQE+utgxshPuuiKfRu8p9w+Iy8La/fhP6W0Ar3LkPDBZ0CQq9d1mK6qkS4VA==",
+  "_location": "/strapi-plugin-import-export-content",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "strapi-plugin-import-export-content",
+    "name": "strapi-plugin-import-export-content",
+    "escapedName": "strapi-plugin-import-export-content",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-import-export-content/-/strapi-plugin-import-export-content-0.3.1.tgz",
+  "_shasum": "afab78b26cd78eaafd314d215078df50c391e6cb",
+  "_spec": "strapi-plugin-import-export-content",
+  "_where": "C:\\Users\\珮伶\\Desktop\\資料庫\\W14_1\\crown-strapi-demo",
+  "author": {
+    "name": "Edison Peñuela",
+    "email": "edisonpe961206@hotmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/EdisonPeM/strapi-plugin-import-export-content/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "csv-parse": "^4.15.3",
+    "csv-string": "^4.0.1",
+    "prismjs": "^1.23.0",
+    "react-simple-code-editor": "^0.11.0"
+  },
+  "deprecated": false,
+  "description": "This is a plugin for import and export content of collection types.",
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "homepage": "https://github.com/EdisonPeM/strapi-plugin-import-export-content#readme",
+  "keywords": [
+    "strapi",
+    "plugin",
+    "strapi",
+    "import",
+    "content",
+    "export",
+    "content"
+  ],
+  "maintainers": [
+    {
+      "name": "Edison Peñuela",
+      "email": "edisonpe961206@hotmail.com"
+    }
+  ],
+  "name": "strapi-plugin-import-export-content",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdisonPeM/strapi-plugin-import-export-content.git"
+  },
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "strapi": {
+    "name": "Import / Export Content",
+    "icon": "sync-alt",
+    "description": "Import and Export your Content"
+  },
+  "version": "0.3.1"
+}

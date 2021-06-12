@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Subjects</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container" style="margin-top: 50px">
+      <div class="card">
+        <div class="card-header">
+          <ul class="nav nav-pills w-100">
+            <li class="nav-pill active">
+              <a class="nav-link">Subjects</a>
+            </li>
+            <li class="nav-pill ml-auto">
+              <a class="nav-link active" href="/apiSubjects/add">Add Subject</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <% if(data.length) { %>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <!-- <th scope="col">Name</th> -->
+                <th scope="col">Name</th>
+                <!-- <th scope="col">Author</th> -->
+                <th scope="col">Code</th>
+                <th scope="col">professor</th>
+                <th scope="col">teaching_assistant</th>
+                <th scope="col">Department_of_Courses</th>
+                <th scope="col">credits</th>
+                <th width="200px">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% for(var i = 0; i< data.length; i++) { %>
+              <tr>
+                <th scope="row"><%= (i+1) %></th>
+                <td><%= data[i].Name%></td>
+                <td><%= data[i].Code%></td>
+                <td><%= data[i].professor%></td>
+                <td><%= data[i].teaching_assistant%></td>
+                <td><%= data[i].Department_of_Courses%></td>
+                <td><%= data[i].credits%></td>
+                <td>
+                  <a
+                    class="btn btn-success edit"
+                    href="/apiSubjects/edit/<%=data[i].id%>"
+                    >Edit</a
+                  >
+                  <a
+                    class="btn btn-danger delete"
+                    onclick="return alert('Are You sure?')"
+                    href="/apiSubjects/delete/<%=data[i].id%>"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <% } %>
+            </tbody>
+          </table>
+          <% } %>
+
+          <!-- if result is empty -->
+          <% if(!data.length) { %>
+          <p class="text-center">No subject found!</p>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

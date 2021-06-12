@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "assignments",
+  "info": {
+    "name": "assignment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ClassName": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "HW_Name": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "HW_Grade": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "size": {
+      "type": "string"
+    },
+    "remote_url": {
+      "type": "string"
+    },
+    "local_url": {
+      "type": "string"
+    },
+    "link_url": {
+      "type": "string"
+    },
+    "cid": {
+      "type": "integer",
+      "unique": true
+    },
+    "products": {
+      "via": "category",
+      "collection": "product"
+    }
+  }
+}

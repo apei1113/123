@@ -1,0 +1,100 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/apiAssignments/delete/:id",
+      "handler": "assignment.apiAssignmentsDelete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/apiAssignments/update",
+      "handler": "assignment.apiAssignmentsUpdate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/apiAssignments/edit/:id",
+      "handler": "assignment.apiAssignmentsEditPage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/apiAssignments/add",
+      "handler": "assignment.apiAssignmentsAdd",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/apiAssignments/add",
+      "handler": "assignment.apiAssignmentsAddPage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/apiAssignments",
+      "handler": "assignment.apiAssignmentsPage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/assignments",
+      "handler": "assignment.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/assignments/count",
+      "handler": "assignment.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/assignments/:id",
+      "handler": "assignment.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/assignments",
+      "handler": "assignment.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/assignments/:id",
+      "handler": "assignment.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/assignments/:id",
+      "handler": "assignment.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

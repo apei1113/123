@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subjects",
+  "info": {
+    "name": "subject"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "default": "Code"
+    },
+    "professor": {
+      "type": "string"
+    },
+    "Code": {
+      "type": "string"
+    },
+    "teaching_assistant": {
+      "type": "string"
+    },
+    "Department_of_Courses": {
+      "type": "string"
+    },
+    "credits": {
+      "type": "integer"
+    }
+  }
+}
